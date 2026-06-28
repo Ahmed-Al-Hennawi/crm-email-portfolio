@@ -505,3 +505,224 @@ body {
     border-radius: 30px;
   }
 }
+#emails,
+#contact {
+  scroll-margin-top: 110px;
+}
+
+.email-showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.email-preview-card {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 16px;
+  align-items: center;
+  min-height: 132px;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035));
+  padding: 14px;
+  backdrop-filter: blur(28px);
+  transition:
+    transform 0.28s ease,
+    border-color 0.28s ease,
+    background 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.email-preview-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(190, 242, 100, 0.12), transparent 32%),
+    radial-gradient(circle at 90% 100%, rgba(103, 232, 249, 0.08), transparent 34%);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+  pointer-events: none;
+}
+
+.email-preview-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(190, 242, 100, 0.32);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.28);
+}
+
+.email-preview-card:hover::before {
+  opacity: 1;
+}
+
+.email-preview-card:active {
+  transform: scale(0.98);
+}
+
+.email-preview-card img {
+  position: relative;
+  z-index: 1;
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  object-fit: cover;
+  filter: saturate(0.85) contrast(1.05);
+}
+
+.email-preview-card div {
+  position: relative;
+  z-index: 1;
+}
+
+.email-preview-card span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--lime);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.email-preview-card h3 {
+  color: white;
+  font-size: 19px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 900;
+}
+
+.email-preview-card p {
+  margin-top: 8px;
+  color: #b9b9c0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.contact-card {
+  display: grid;
+  gap: 30px;
+  align-items: center;
+  border: 1px solid rgba(190, 242, 100, 0.16);
+  border-radius: 38px;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(190, 242, 100, 0.14), transparent 34%),
+    radial-gradient(circle at 90% 80%, rgba(103, 232, 249, 0.10), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.085), rgba(255,255,255,0.04));
+  padding: 30px;
+  backdrop-filter: blur(32px);
+  box-shadow: 0 30px 100px rgba(0,0,0,0.28);
+}
+
+.contact-eyebrow {
+  color: var(--lime);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.contact-card h2 {
+  margin-top: 14px;
+  max-width: 760px;
+  color: white;
+  font-size: clamp(2.2rem, 10vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.065em;
+  font-weight: 950;
+}
+
+.contact-card span {
+  display: block;
+  margin-top: 20px;
+  max-width: 680px;
+  color: #c4c4cc;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 720px) {
+  .email-showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-card {
+    padding: 42px;
+  }
+
+  .contact-actions {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1100px) {
+  .email-showcase-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .email-preview-card {
+    display: block;
+    min-height: 360px;
+    padding: 16px;
+  }
+
+  .email-preview-card img {
+    width: 100%;
+    height: 170px;
+    border-radius: 24px;
+  }
+
+  .email-preview-card div {
+    padding: 20px 4px 4px;
+  }
+
+  .email-preview-card h3 {
+    font-size: 21px;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .email-preview-card {
+    grid-template-columns: 84px 1fr;
+    gap: 13px;
+    border-radius: 24px;
+  }
+
+  .email-preview-card img {
+    width: 84px;
+    height: 84px;
+    border-radius: 19px;
+  }
+
+  .email-preview-card h3 {
+    font-size: 17px;
+  }
+
+  .email-preview-card p {
+    font-size: 13px;
+  }
+
+  .contact-card {
+    padding: 24px;
+    border-radius: 30px;
+  }
+}
+.email-preview-card,
+.contact-card {
+  opacity: 1;
+  visibility: visible;
+}

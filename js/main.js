@@ -119,3 +119,47 @@ document.querySelectorAll(".tap-button").forEach((button) => {
     });
   });
 });
+if (!prefersReducedMotion) {
+  gsap.fromTo(
+    ".email-preview-card",
+    {
+      y: 26,
+      opacity: 0,
+      scale: 0.98
+    },
+    {
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      duration: 0.8,
+      ease: "power3.out",
+      stagger: 0.06,
+      scrollTrigger: {
+        trigger: ".email-showcase-grid",
+        start: "top 85%",
+        once: true
+      }
+    }
+  );
+
+  gsap.fromTo(
+    ".contact-card",
+    {
+      y: 34,
+      opacity: 0,
+      scale: 0.985
+    },
+    {
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      duration: 0.95,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".contact-card",
+        start: "top 85%",
+        once: true
+      }
+    }
+  );
+}

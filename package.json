@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "A professional CRM and HTML email development portfolio project created for a fictional commercial gym brand called **Forge Fitness**.",
   "main": "index.js",
- "scripts": {
+  "scripts": {
   "build:welcome": "mjml emails/welcome-email/welcome.mjml -o emails/welcome-email/welcome.html",
   "build:membership": "mjml emails/membership-confirmation/membership-confirmation.mjml -o emails/membership-confirmation/membership-confirmation.html",
   "build:class-booking": "mjml emails/class-booking-confirmation/class-booking-confirmation.mjml -o emails/class-booking-confirmation/class-booking-confirmation.html",
   "build:renewal": "mjml emails/renewal-reminder/renewal-reminder.mjml -o emails/renewal-reminder/renewal-reminder.html",
   "build:failed-payment": "mjml emails/failed-payment/failed-payment.mjml -o emails/failed-payment/failed-payment.html",
   "build:win-back": "mjml emails/win-back/win-back.mjml -o emails/win-back/win-back.html",
-  "build": "npm run build:welcome && npm run build:membership && npm run build:class-booking && npm run build:renewal && npm run build:failed-payment && npm run build:win-back"
+  "build:referral": "mjml emails/referral/referral.mjml -o emails/referral/referral.html",
+  "build": "npm run build:welcome && npm run build:membership && npm run build:class-booking && npm run build:renewal && npm run build:failed-payment && npm run build:win-back && npm run build:referral"
   },
   "repository": {
     "type": "git",

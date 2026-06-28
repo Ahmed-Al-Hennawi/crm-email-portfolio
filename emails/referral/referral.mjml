@@ -1,0 +1,205 @@
+<mjml>
+  <mj-head>
+    <mj-title>Invite a Friend to Forge Fitness</mj-title>
+    <mj-preview>Train together. Invite a friend and you both get rewarded.</mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-text color="#111111" font-size="16px" line-height="24px" />
+      <mj-button background-color="#111111" color="#ffffff" border-radius="0px" font-size="15px" font-weight="bold" inner-padding="16px 28px" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#eeeeee">
+
+    <!-- Header -->
+    <mj-section background-color="#050505" padding="28px 24px">
+      <mj-column>
+        <mj-image
+          src="../../assets/images/forge-fitness/logo.png"
+          width="165px"
+          alt="Forge Fitness"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-section background-color="#050505" padding="0">
+      <mj-column>
+        <mj-image
+          src="../../assets/images/forge-fitness/main-area.png"
+          alt="Forge Fitness training floor"
+          padding="0"
+          fluid-on-mobile="true"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Message -->
+    <mj-section background-color="#050505" padding="42px 30px 34px">
+      <mj-column>
+        <mj-text color="#ffffff" font-size="12px" letter-spacing="2px" font-weight="bold" align="center" padding-bottom="12px">
+          MEMBER REFERRAL
+        </mj-text>
+
+        <mj-text color="#ffffff" font-size="30px" line-height="38px" font-weight="bold" align="center" padding-bottom="14px">
+          Bring someone into the Forge, {{first_name}}
+        </mj-text>
+
+        <mj-text color="#cfcfcf" font-size="16px" line-height="26px" align="center" padding="0 10px 26px">
+          Training is stronger with the right people around you. Invite a friend to join Forge Fitness and you both receive a member reward.
+        </mj-text>
+
+        <mj-button href="https://example.com/refer" align="center">
+          INVITE A FRIEND
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Reward Section -->
+    <mj-section background-color="#ffffff" padding="38px 30px 18px">
+      <mj-column>
+        <mj-text color="#111111" font-size="12px" letter-spacing="2px" font-weight="bold" align="center" padding-bottom="10px">
+          YOUR REWARD
+        </mj-text>
+
+        <mj-text color="#111111" font-size="28px" line-height="36px" font-weight="bold" align="center" padding-bottom="12px">
+          You get £{{reward_amount}}. They get £{{friend_reward}}.
+        </mj-text>
+
+        <mj-text color="#555555" font-size="15px" line-height="25px" align="center" padding="0 10px 20px">
+          Share your personal referral code with a friend. When they join, your reward will be added to your member account.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Referral Code Card -->
+    <mj-section background-color="#ffffff" padding="0 30px 36px">
+      <mj-column>
+        <mj-table>
+          <tr>
+            <td style="background-color: #050505; color: #ffffff; text-align: center; padding: 24px 18px; font-family: Arial, Helvetica, sans-serif;">
+              <div style="font-size: 12px; letter-spacing: 2px; font-weight: bold; color: #bfbfbf; padding-bottom: 10px;">
+                YOUR REFERRAL CODE
+              </div>
+              <div style="font-size: 28px; line-height: 34px; font-weight: bold; letter-spacing: 3px;">
+                {{referral_code}}
+              </div>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- How It Works -->
+    <mj-section background-color="#f5f5f5" padding="36px 26px 14px">
+      <mj-column>
+        <mj-text color="#111111" font-size="22px" font-weight="bold" align="center" padding-bottom="10px">
+          How it works
+        </mj-text>
+
+        <mj-text color="#555555" font-size="15px" line-height="25px" align="center" padding="0 12px 22px">
+          Share your code, your friend joins, and both rewards are applied after their first successful membership payment.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f5f5f5" padding="0 20px 36px">
+      <mj-column width="33.33%">
+        <mj-text color="#111111" font-size="26px" font-weight="bold" align="center" padding-bottom="6px">
+          01
+        </mj-text>
+        <mj-text color="#111111" font-size="15px" font-weight="bold" align="center" padding-bottom="6px">
+          Share your code
+        </mj-text>
+        <mj-text color="#666666" font-size="13px" line-height="20px" align="center">
+          Send your referral code to a friend.
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="33.33%">
+        <mj-text color="#111111" font-size="26px" font-weight="bold" align="center" padding-bottom="6px">
+          02
+        </mj-text>
+        <mj-text color="#111111" font-size="15px" font-weight="bold" align="center" padding-bottom="6px">
+          They join
+        </mj-text>
+        <mj-text color="#666666" font-size="13px" line-height="20px" align="center">
+          Your friend signs up using your code.
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="33.33%">
+        <mj-text color="#111111" font-size="26px" font-weight="bold" align="center" padding-bottom="6px">
+          03
+        </mj-text>
+        <mj-text color="#111111" font-size="15px" font-weight="bold" align="center" padding-bottom="6px">
+          Both get rewarded
+        </mj-text>
+        <mj-text color="#666666" font-size="13px" line-height="20px" align="center">
+          Your reward is added to your account.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image Feature -->
+    <mj-section background-color="#ffffff" padding="34px 24px 10px">
+      <mj-column>
+        <mj-text color="#111111" font-size="20px" font-weight="bold" align="center" padding-bottom="10px">
+          Train together at {{home_gym}}
+        </mj-text>
+
+        <mj-text color="#555555" font-size="15px" line-height="25px" align="center" padding="0 12px 22px">
+          From the strength floor to studio sessions, Forge Fitness is built for members who want to train with consistency.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 24px 34px">
+      <mj-column>
+        <mj-image
+          src="../../assets/images/forge-fitness/free-weight-area.png"
+          alt="Forge Fitness free weights area"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Expiry / Terms -->
+    <mj-section background-color="#f5f5f5" padding="34px 30px">
+      <mj-column>
+        <mj-text color="#111111" font-size="20px" font-weight="bold" align="center" padding-bottom="10px">
+          Offer ends {{offer_expiry}}
+        </mj-text>
+
+        <mj-text color="#555555" font-size="15px" line-height="25px" align="center" padding="0 12px 22px">
+          Your referral reward is available for a limited time. Invite your friend before the offer ends to claim your member credit.
+        </mj-text>
+
+        <mj-button href="https://example.com/refer" align="center">
+          SHARE REFERRAL CODE
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#050505" padding="30px 24px">
+      <mj-column>
+        <mj-text color="#ffffff" font-size="13px" align="center" line-height="22px">
+          Forge Fitness<br />
+          London, United Kingdom
+        </mj-text>
+
+        <mj-text color="#888888" font-size="12px" align="center" line-height="20px">
+          You are receiving this email because you are a Forge Fitness member eligible for referral rewards.
+        </mj-text>
+
+        <mj-text color="#777777" font-size="12px" align="center">
+          Manage preferences · Referral terms · Contact support · Unsubscribe
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

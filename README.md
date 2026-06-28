@@ -171,6 +171,9 @@ crm-email-portfolio/
 │           └── studio-area.png
 ├── emails/
 │   ├── welcome-email/
+│   │   ├── README.md
+│   │   ├── welcome.mjml
+│   │   └── welcome.html
 │   ├── membership-confirmation/
 │   ├── class-booking-confirmation/
 │   ├── renewal-reminder/

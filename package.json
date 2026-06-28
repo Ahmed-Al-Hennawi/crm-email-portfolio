@@ -11,7 +11,8 @@
   "build:failed-payment": "mjml emails/failed-payment/failed-payment.mjml -o emails/failed-payment/failed-payment.html",
   "build:win-back": "mjml emails/win-back/win-back.mjml -o emails/win-back/win-back.html",
   "build:referral": "mjml emails/referral/referral.mjml -o emails/referral/referral.html",
-  "build": "npm run build:welcome && npm run build:membership && npm run build:class-booking && npm run build:renewal && npm run build:failed-payment && npm run build:win-back && npm run build:referral"
+  "build:personal-training": "mjml emails/personal-training-promotion/personal-training-promotion.mjml -o emails/personal-training-promotion/personal-training-promotion.html",
+  "build": "npm run build:welcome && npm run build:membership && npm run build:class-booking && npm run build:renewal && npm run build:failed-payment && npm run build:win-back && npm run build:referral && npm run build:personal-training"
   },
   "repository": {
     "type": "git",

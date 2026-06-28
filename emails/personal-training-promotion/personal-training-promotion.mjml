@@ -1,0 +1,220 @@
+<mjml>
+  <mj-head>
+    <mj-title>Build a Training Plan With Forge Fitness</mj-title>
+    <mj-preview>Book a personal training consultation and build a plan around your goals.</mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-text color="#111111" font-size="16px" line-height="24px" />
+      <mj-button background-color="#111111" color="#ffffff" border-radius="0px" font-size="15px" font-weight="bold" inner-padding="16px 28px" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#eeeeee">
+
+    <!-- Header -->
+    <mj-section background-color="#050505" padding="28px 24px">
+      <mj-column>
+        <mj-image
+          src="../../assets/images/forge-fitness/logo.png"
+          width="165px"
+          alt="Forge Fitness"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero -->
+    <mj-section background-color="#050505" padding="0">
+      <mj-column>
+        <mj-image
+          src="../../assets/images/forge-fitness/free-weight-area.png"
+          alt="Forge Fitness free weights area"
+          padding="0"
+          fluid-on-mobile="true"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Message -->
+    <mj-section background-color="#050505" padding="42px 30px 34px">
+      <mj-column>
+        <mj-text color="#ffffff" font-size="12px" letter-spacing="2px" font-weight="bold" align="center" padding-bottom="12px">
+          PERSONAL TRAINING
+        </mj-text>
+
+        <mj-text color="#ffffff" font-size="30px" line-height="38px" font-weight="bold" align="center" padding-bottom="14px">
+          Train with a plan, {{first_name}}
+        </mj-text>
+
+        <mj-text color="#cfcfcf" font-size="16px" line-height="26px" align="center" padding="0 10px 26px">
+          Whether your goal is strength, confidence, fat loss, or better technique, our personal trainers can help you build a focused plan that fits your routine.
+        </mj-text>
+
+        <mj-button href="https://example.com/personal-training" align="center">
+          BOOK A CONSULTATION
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Personalised Reason -->
+    <mj-section background-color="#ffffff" padding="38px 30px 20px">
+      <mj-column>
+        <mj-text color="#111111" font-size="22px" font-weight="bold" padding-bottom="12px">
+          Why we think this could help
+        </mj-text>
+
+        <mj-text color="#555555" font-size="15px" line-height="25px">
+          You joined Forge Fitness on {{start_date}}, and your home gym is {{home_gym}}. A personal training consultation can help you set clear goals, choose the right exercises, and build confidence on the gym floor.
+        </mj-text>
+
+        <mj-text color="#555555" font-size="15px" line-height="25px">
+          This is especially useful if you want a simple structure for your first few weeks or want support improving your technique.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Offer Card -->
+    <mj-section background-color="#ffffff" padding="0 30px 36px">
+      <mj-column>
+        <mj-table>
+          <tr>
+            <td style="background-color: #050505; color: #ffffff; text-align: center; padding: 28px 20px; font-family: Arial, Helvetica, sans-serif;">
+              <div style="font-size: 12px; letter-spacing: 2px; font-weight: bold; color: #bfbfbf; padding-bottom: 10px;">
+                MEMBER INTRO OFFER
+              </div>
+              <div style="font-size: 28px; line-height: 34px; font-weight: bold; padding-bottom: 10px;">
+                {{offer_name}}
+              </div>
+              <div style="font-size: 15px; line-height: 24px; color: #d0d0d0;">
+                Available until {{offer_expiry}}
+              </div>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Benefits -->
+    <mj-section background-color="#f5f5f5" padding="36px 26px 14px">
+      <mj-column>
+        <mj-text color="#111111" font-size="22px" font-weight="bold" align="center" padding-bottom="10px">
+          What you get from the session
+        </mj-text>
+
+        <mj-text color="#555555" font-size="15px" line-height="25px" align="center" padding="0 12px 22px">
+          Your trainer will help you understand where to start, how to train safely, and how to make progress without overcomplicating your routine.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f5f5f5" padding="0 20px 36px">
+      <mj-column width="33.33%">
+        <mj-text color="#111111" font-size="26px" font-weight="bold" align="center" padding-bottom="6px">
+          01
+        </mj-text>
+        <mj-text color="#111111" font-size="15px" font-weight="bold" align="center" padding-bottom="6px">
+          Goal review
+        </mj-text>
+        <mj-text color="#666666" font-size="13px" line-height="20px" align="center">
+          Discuss your training goal and current routine.
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="33.33%">
+        <mj-text color="#111111" font-size="26px" font-weight="bold" align="center" padding-bottom="6px">
+          02
+        </mj-text>
+        <mj-text color="#111111" font-size="15px" font-weight="bold" align="center" padding-bottom="6px">
+          Technique support
+        </mj-text>
+        <mj-text color="#666666" font-size="13px" line-height="20px" align="center">
+          Learn how to move safely and confidently.
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="33.33%">
+        <mj-text color="#111111" font-size="26px" font-weight="bold" align="center" padding-bottom="6px">
+          03
+        </mj-text>
+        <mj-text color="#111111" font-size="15px" font-weight="bold" align="center" padding-bottom="6px">
+          Simple plan
+        </mj-text>
+        <mj-text color="#666666" font-size="13px" line-height="20px" align="center">
+          Leave with a realistic plan for your next sessions.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Trainer Recommendation -->
+    <mj-section background-color="#ffffff" padding="36px 30px 8px">
+      <mj-column>
+        <mj-text color="#111111" font-size="22px" font-weight="bold" padding-bottom="12px">
+          Recommended for you
+        </mj-text>
+
+        <mj-table color="#333333" font-size="15px" line-height="24px">
+          <tr>
+            <td style="padding: 12px 0; border-bottom: 1px solid #e5e5e5;"><strong>Training focus</strong></td>
+            <td style="padding: 12px 0; border-bottom: 1px solid #e5e5e5; text-align: right;">{{training_focus}}</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 0; border-bottom: 1px solid #e5e5e5;"><strong>Home gym</strong></td>
+            <td style="padding: 12px 0; border-bottom: 1px solid #e5e5e5; text-align: right;">{{home_gym}}</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 0;"><strong>Suggested session</strong></td>
+            <td style="padding: 12px 0; text-align: right;">{{suggested_session}}</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image Feature -->
+    <mj-section background-color="#ffffff" padding="24px 24px 34px">
+      <mj-column>
+        <mj-image
+          src="../../assets/images/forge-fitness/main-area.png"
+          alt="Forge Fitness training floor"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section background-color="#f5f5f5" padding="36px 30px">
+      <mj-column>
+        <mj-text color="#111111" font-size="22px" line-height="30px" font-weight="bold" align="center" padding-bottom="10px">
+          Build your first training plan
+        </mj-text>
+
+        <mj-text color="#555555" font-size="15px" line-height="25px" align="center" padding="0 12px 22px">
+          Book a consultation with a Forge Fitness trainer and turn your membership into a structured routine.
+        </mj-text>
+
+        <mj-button href="https://example.com/personal-training" align="center">
+          BOOK PERSONAL TRAINING
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#050505" padding="30px 24px">
+      <mj-column>
+        <mj-text color="#ffffff" font-size="13px" align="center" line-height="22px">
+          Forge Fitness<br />
+          London, United Kingdom
+        </mj-text>
+
+        <mj-text color="#888888" font-size="12px" align="center" line-height="20px">
+          You are receiving this email because you are a Forge Fitness member eligible for personal training offers.
+        </mj-text>
+
+        <mj-text color="#777777" font-size="12px" align="center">
+          Manage preferences · Contact support · Unsubscribe
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

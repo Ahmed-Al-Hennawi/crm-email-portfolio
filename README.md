@@ -15,6 +15,21 @@ The goal of this project is to demonstrate practical skills for roles such as:
 
 ---
 
+## Live Email Previews
+
+| Email | Live Preview |
+|---|---|
+| Welcome Email | [View Email](https://Ahmed-Al-Hennawi.github.io/crm-email-portfolio/emails/welcome-email/welcome.html) |
+| Membership Confirmation | [View Email](https://Ahmed-Al-Hennawi.github.io/crm-email-portfolio/emails/membership-confirmation/membership-confirmation.html) |
+| Class Booking Confirmation | [View Email](https://Ahmed-Al-Hennawi.github.io/crm-email-portfolio/emails/class-booking-confirmation/class-booking-confirmation.html) |
+| Membership Renewal Reminder | [View Email](https://Ahmed-Al-Hennawi.github.io/crm-email-portfolio/emails/renewal-reminder/renewal-reminder.html) |
+| Failed Payment Recovery | [View Email](https://Ahmed-Al-Hennawi.github.io/crm-email-portfolio/emails/failed-payment/failed-payment.html) |
+| Win-Back Campaign | [View Email](https://Ahmed-Al-Hennawi.github.io/crm-email-portfolio/emails/win-back/win-back.html) |
+| Referral Campaign | [View Email](https://Ahmed-Al-Hennawi.github.io/crm-email-portfolio/emails/referral/referral.html) |
+| Personal Training Promotion | [View Email](https://Ahmed-Al-Hennawi.github.io/crm-email-portfolio/emails/personal-training-promotion/personal-training-promotion.html) |
+
+---
+
 ## Project Overview
 
 Forge Fitness is a fictional premium gym brand based in London.

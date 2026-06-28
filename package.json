@@ -7,7 +7,8 @@
   "build:welcome": "mjml emails/welcome-email/welcome.mjml -o emails/welcome-email/welcome.html",
   "build:membership": "mjml emails/membership-confirmation/membership-confirmation.mjml -o emails/membership-confirmation/membership-confirmation.html",
   "build:class-booking": "mjml emails/class-booking-confirmation/class-booking-confirmation.mjml -o emails/class-booking-confirmation/class-booking-confirmation.html",
-  "build": "npm run build:welcome && npm run build:membership && npm run build:class-booking"
+  "build:renewal": "mjml emails/renewal-reminder/renewal-reminder.mjml -o emails/renewal-reminder/renewal-reminder.html",
+  "build": "npm run build:welcome && npm run build:membership && npm run build:class-booking && npm run build:renewal"
   },
   "repository": {
     "type": "git",

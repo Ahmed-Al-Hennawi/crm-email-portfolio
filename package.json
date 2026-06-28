@@ -6,7 +6,8 @@
   "scripts": {
   "build:welcome": "mjml emails/welcome-email/welcome.mjml -o emails/welcome-email/welcome.html",
   "build:membership": "mjml emails/membership-confirmation/membership-confirmation.mjml -o emails/membership-confirmation/membership-confirmation.html",
-  "build": "npm run build:welcome && npm run build:membership"
+  "build:class-booking": "mjml emails/class-booking-confirmation/class-booking-confirmation.mjml -o emails/class-booking-confirmation/class-booking-confirmation.html",
+  "build": "npm run build:welcome && npm run build:membership && npm run build:class-booking"
   },
   "repository": {
     "type": "git",

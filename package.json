@@ -4,8 +4,9 @@
   "description": "A professional CRM and HTML email development portfolio project created for a fictional commercial gym brand called **Forge Fitness**.",
   "main": "index.js",
   "scripts": {
-    "build:welcome": "mjml emails/welcome-email/welcome.mjml -o emails/welcome-email/welcome.html",
-    "build": "npm run build:welcome"
+  "build:welcome": "mjml emails/welcome-email/welcome.mjml -o emails/welcome-email/welcome.html",
+  "build:membership": "mjml emails/membership-confirmation/membership-confirmation.mjml -o emails/membership-confirmation/membership-confirmation.html",
+  "build": "npm run build:welcome && npm run build:membership"
   },
   "repository": {
     "type": "git",

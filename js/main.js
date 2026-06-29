@@ -119,47 +119,83 @@ document.querySelectorAll(".tap-button").forEach((button) => {
     });
   });
 });
-if (!prefersReducedMotion) {
-  gsap.fromTo(
-    ".email-preview-card",
-    {
-      y: 26,
-      opacity: 0,
-      scale: 0.98
-    },
-    {
-      y: 0,
-      opacity: 1,
-      scale: 1,
-      duration: 0.8,
-      ease: "power3.out",
-      stagger: 0.06,
-      scrollTrigger: {
-        trigger: ".email-showcase-grid",
-        start: "top 85%",
-        once: true
-      }
-    }
-  );
 
-  gsap.fromTo(
-    ".contact-card",
-    {
-      y: 34,
-      opacity: 0,
-      scale: 0.985
-    },
-    {
-      y: 0,
-      opacity: 1,
-      scale: 1,
-      duration: 0.95,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".contact-card",
-        start: "top 85%",
-        once: true
-      }
+// Email cards + contact scroll animations
+if (!prefersReducedMotion) {
+  gsap.set(".email-preview-card", {
+    opacity: 0,
+    y: 34,
+    scale: 0.96,
+    filter: "blur(10px)"
+  });
+
+  ScrollTrigger.batch(".email-preview-card", {
+    start: "top 88%",
+    once: true,
+    onEnter: (batch) => {
+      gsap.to(batch, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        filter: "blur(0px)",
+        duration: 0.9,
+        ease: "power3.out",
+        stagger: 0.08
+      });
     }
-  );
+  });
+
+  gsap.set(".contact-card", {
+    opacity: 0,
+    y: 40,
+    scale: 0.97,
+    filter: "blur(12px)"
+  });
+
+  ScrollTrigger.create({
+    trigger: ".contact-card",
+    start: "top 86%",
+    once: true,
+    onEnter: () => {
+      gsap.to(".contact-card", {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        filter: "blur(0px)",
+        duration: 1,
+        ease: "power3.out"
+      });
+    }
+  });
+
+  // Small premium hover movement for email cards
+  document.querySelectorAll(".email-preview-card").forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const rotateX = ((y / rect.height) - 0.5) * -4;
+      const rotateY = ((x / rect.width) - 0.5) * 4;
+
+      gsap.to(card, {
+        rotateX,
+        rotateY,
+        duration: 0.35,
+        ease: "power2.out",
+        transformPerspective: 900
+      });
+    });
+
+    card.addEventListener("mouseleave", () => {
+      gsap.to(card, {
+        rotateX: 0,
+        rotateY: 0,
+        duration: 0.45,
+        ease: "power3.out"
+      });
+    });
+  });
+
+  ScrollTrigger.refresh();
 }

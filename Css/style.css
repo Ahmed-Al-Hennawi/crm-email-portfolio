@@ -723,6 +723,9 @@ body {
 }
 .email-preview-card,
 .contact-card {
-  opacity: 1;
-  visibility: visible;
+  will-change: transform, opacity, filter;
+}
+
+.email-preview-card {
+  transform-style: preserve-3d;
 }
